@@ -27,11 +27,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="465" height="235"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="751" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="8uT-XL-NWF">
-                                        <rect key="frame" x="208" y="189" width="49" height="26"/>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="76o-fR-cNd">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="0.0"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="45" id="kIn-Ls-Pxa"/>
+                                            <constraint firstAttribute="height" id="VzX-d3-80I"/>
+                                            <constraint firstAttribute="width" constant="250" id="hHX-dZ-Wha"/>
                                         </constraints>
+                                    </customView>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="751" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="8uT-XL-NWF">
+                                        <rect key="frame" x="14" y="189" width="49" height="26"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Title" id="Wq4-39-VLd">
                                             <font key="font" textStyle="title1" name=".SFNS-Regular"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -39,7 +43,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="XfV-ty-Aw6">
-                                        <rect key="frame" x="18" y="20" width="429" height="161"/>
+                                        <rect key="frame" x="18" y="20" width="41" height="161"/>
                                         <textFieldCell key="cell" truncatesLastVisibleLine="YES" alignment="center" title="Label" id="8IH-Ty-qFl">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -49,12 +53,13 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="XfV-ty-Aw6" firstAttribute="leading" secondItem="y4p-ub-nbE" secondAttribute="leading" constant="20" symbolic="YES" id="8ek-aB-BkB"/>
+                                    <constraint firstItem="76o-fR-cNd" firstAttribute="leading" secondItem="y4p-ub-nbE" secondAttribute="leading" id="ASw-yJ-w0O"/>
                                     <constraint firstItem="8uT-XL-NWF" firstAttribute="top" secondItem="y4p-ub-nbE" secondAttribute="top" constant="20" symbolic="YES" id="GAN-dX-IWJ"/>
-                                    <constraint firstAttribute="trailing" secondItem="8uT-XL-NWF" secondAttribute="trailing" constant="210" id="KLB-zn-kmk"/>
+                                    <constraint firstAttribute="bottom" secondItem="76o-fR-cNd" secondAttribute="bottom" id="VTC-PD-eyd"/>
                                     <constraint firstItem="8uT-XL-NWF" firstAttribute="centerX" secondItem="y4p-ub-nbE" secondAttribute="centerX" id="fCe-ze-65N"/>
                                     <constraint firstItem="XfV-ty-Aw6" firstAttribute="centerX" secondItem="y4p-ub-nbE" secondAttribute="centerX" id="kek-Mg-Bvl"/>
+                                    <constraint firstAttribute="trailing" secondItem="76o-fR-cNd" secondAttribute="trailing" id="ljE-iE-rvz"/>
                                     <constraint firstAttribute="trailing" secondItem="XfV-ty-Aw6" secondAttribute="trailing" constant="20" symbolic="YES" id="mMG-bZ-muV"/>
-                                    <constraint firstItem="8uT-XL-NWF" firstAttribute="leading" secondItem="y4p-ub-nbE" secondAttribute="leading" constant="210" id="nWM-Bx-11T"/>
                                     <constraint firstItem="XfV-ty-Aw6" firstAttribute="top" secondItem="8uT-XL-NWF" secondAttribute="bottom" constant="8" symbolic="YES" id="sjx-Al-pkD"/>
                                     <constraint firstAttribute="bottom" secondItem="XfV-ty-Aw6" secondAttribute="bottom" constant="20" symbolic="YES" id="tbi-jj-B2H"/>
                                 </constraints>
